@@ -1,0 +1,54 @@
+/* === GENEL TEMA === */
+.stApp {
+    background-color: #000515;
+}
+
+/* === LOGO KONUMU - TAM SOL ÜST === */
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.logo-container img {
+    width: 140px;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    filter: brightness(1.2) contrast(1.2);
+    display: block;
+}
+
+/* === İÇERİK KAYDIRMA === */
+.main .block-container {
+    padding-top: 100px !important;
+}
+
+/* === MOBILE UYUM === */
+@media (max-width: 768px) {
+    .logo-container {
+        top: 10px;
+        left: 10px;
+    }
+    
+    .logo-container img {
+        width: 100px;
+    }
+    
+    .main .block-container {
+        padding-top: 80px !important;
+    }
+}
+
+/* === HEADER/FOOTER GİZLE === */
+header, footer {
+    visibility: hidden;
+}
+
+/* === LOGO KALİTE === */
+img {
+    -webkit-user-drag: none;
+    image-rendering: crisp-edges;
+}
